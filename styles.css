@@ -277,7 +277,7 @@ header .wrapper {
 
 /* nav styles */
 
-.top-nav .wrapper {
+/* .top-nav .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -294,6 +294,43 @@ header .wrapper {
 
 a {
     text-decoration: none
+} */
+
+.lang-list {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    gap: 1rem;
+}
+
+.lang-list li {
+    list-style: none;
+}
+
+.lang-list h2 {
+    margin-right: auto;
+    padding: 0;
+}
+
+.top-nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+.top-nav-list li {
+    list-style-type: none;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.cart {
+    margin-left: auto;
 }
 
 /* main feature styles */
