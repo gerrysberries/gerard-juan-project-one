@@ -1,0 +1,40 @@
+@use 'variables' as v;
+
+.feature * {
+    // outline: 1px solid red;
+}
+
+.feature {
+    background: v.$brown;
+    font-family: v.$ff-primary;
+    text-transform: capitalize;
+    line-height: 4.5rem;
+    padding: 2rem 0;
+        .feature-wrapper {
+            display: flex;
+            align-items: center;
+                * {
+                    flex-basis:50%;
+                }
+        }
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: v.$fw-300;
+    font-size: v.$fs-700;
+    span {
+        font-weight: v.$fw-400;
+        font-size: 6rem;
+        display: block;
+    }
+}
+
+.btn-feature {
+font-size: v.$fs-400;
+color: v.$white;
+background: v.$green;
+text-transform: uppercase;
+padding: 1.25rem 2.25rem;
+border-radius: 2rem;
+}
