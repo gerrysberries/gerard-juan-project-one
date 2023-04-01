@@ -92,7 +92,7 @@ h6 {
 
 .wrapper {
   max-width: 1280px;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -226,4 +226,51 @@ h1 span {
   text-transform: uppercase;
   padding: 1.25rem 2.25rem;
   border-radius: 2rem;
+}
+
+.payment-info {
+  font-family: "Rubik", sans-serif;
+  text-transform: capitalize;
+  margin: 5rem 0;
+}
+
+.payment-info-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.payment-info-wrapper .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  border: 1.75px dashed hsl(85, 52%, 64%);
+  border-radius: 0.5rem;
+  padding: 1.5rem 2rem;
+}
+
+.payment-image-container {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.payment-text-container {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+.payment-text-container h4 {
+  font-size: 1.25rem;
 }

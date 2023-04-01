@@ -1,9 +1,5 @@
 @use 'variables' as v;
 
-.feature * {
-    // outline: 1px solid red;
-}
-
 .feature {
     background: v.$brown;
     font-family: v.$ff-primary;
