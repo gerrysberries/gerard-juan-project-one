@@ -1,0 +1,77 @@
+@use 'variables' as v;
+
+.products * {
+    // outline: 1px solid black;
+}
+
+.products {
+    font-size: v.$fs-400;
+    font-family: v.$ff-primary;
+}
+
+.products-heading {
+    font-size: v.$fs-600;
+    font-weight: v.$fw-700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.product-categories-list {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    li {
+        border: 1.5px solid v.$grey-light;
+        border-radius: 0.25rem;
+        padding: 0.3rem 1rem;
+        &:hover,
+        :focus {
+            border: 1.5px dashed v.$green;
+            color: v.$green;
+            outline: 0;
+        }
+    }
+}
+
+.product-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem 0;
+
+    >a {
+        flex-basis: 25%;
+    }
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.card > img {
+    width: 100%;
+    align-self: center;
+    margin-bottom: -2.75rem;
+}
+
+button {
+    z-index: 2;
+    width: 2rem;
+    background: v.$white;
+    border: 1px solid white;
+    box-shadow: 1px 3px 5px 1px v.$grey-light;
+    margin-left: 0.5rem;
+}
+
+.card p {
+text-transform: capitalize;
+}
+
+.card span {
+    color: v.$green;
+    font-size: v.$fs-400;
+}

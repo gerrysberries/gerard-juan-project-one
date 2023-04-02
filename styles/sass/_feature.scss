@@ -15,13 +15,13 @@
         }
 }
 
-h1 {
+.feature h1 {
     text-transform: uppercase;
     font-weight: v.$fw-300;
     font-size: v.$fs-700;
     span {
         font-weight: v.$fw-400;
-        font-size: 6rem;
+        font-size: v.$fs-800;
         display: block;
     }
 }

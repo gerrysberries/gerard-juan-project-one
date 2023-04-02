@@ -101,6 +101,18 @@ a {
   color: inherit;
 }
 
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  font-size: 16px;
+}
+
 header {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
@@ -129,6 +141,7 @@ header {
 
 .heading-sale {
   font-size: inherit;
+  font-weight: inherit;
   margin-right: auto;
 }
 
@@ -208,14 +221,14 @@ header {
       flex-basis: 50%;
 }
 
-h1 {
+.feature h1 {
   text-transform: uppercase;
   font-weight: 300;
   font-size: 3.375rem;
 }
-h1 span {
+.feature h1 span {
   font-weight: 400;
-  font-size: 6rem;
+  font-size: 5.0625rem;
   display: block;
 }
 
@@ -253,8 +266,8 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 32%;
+      flex-basis: 32%;
   border: 1.75px dashed hsl(85, 52%, 64%);
   border-radius: 0.5rem;
   padding: 1.5rem 2rem;
@@ -273,4 +286,89 @@ h1 span {
 }
 .payment-text-container h4 {
   font-size: 1.25rem;
+}
+
+.products {
+  font-size: 1rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.products-heading {
+  font-size: 2.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.product-categories-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+.product-categories-list li {
+  border: 1.5px solid hsl(210, 14%, 89%);
+  border-radius: 0.25rem;
+  padding: 0.3rem 1rem;
+}
+.product-categories-list li:hover,
+.product-categories-list li :focus {
+  border: 1.5px dashed hsl(85, 52%, 64%);
+  color: hsl(85, 52%, 64%);
+  outline: 0;
+}
+
+.product-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 3rem 0;
+}
+.product-cards-container > a {
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
+}
+
+.card > img {
+  width: 100%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: -2.75rem;
+}
+
+button {
+  z-index: 2;
+  width: 2rem;
+  background: hsl(0, 0%, 100%);
+  border: 1px solid white;
+  -webkit-box-shadow: 1px 3px 5px 1px hsl(210, 14%, 89%);
+          box-shadow: 1px 3px 5px 1px hsl(210, 14%, 89%);
+  margin-left: 0.5rem;
+}
+
+.card p {
+  text-transform: capitalize;
+}
+
+.card span {
+  color: hsl(85, 52%, 64%);
+  font-size: 1rem;
 }
