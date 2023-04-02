@@ -481,6 +481,7 @@ div.new-col {
 .blog {
   font-family: "Rubik", sans-serif;
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 .text-container {
@@ -502,6 +503,7 @@ article {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  gap: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -512,7 +514,6 @@ article {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: start;
-  gap: 1rem;
   text-align: left;
   line-height: 1.75rem;
   background: hsl(228, 38%, 97%);
@@ -534,5 +535,21 @@ article h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 1rem;
+}
+
+footer {
+  font-family: "Rubik", sans-serif;
+  padding-top: 4rem;
+  background: no-repeat center url(../../assets/footer.jpg);
+}
+
+.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 1;
+      flex-basis: 1;
 }

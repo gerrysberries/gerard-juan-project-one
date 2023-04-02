@@ -1,0 +1,13 @@
+@use 'variables' as v;
+
+footer {
+    font-family: v.$ff-primary;
+    // margin-top: 3rem;
+    padding-top: 4rem;
+    background: no-repeat center url(../../assets/footer.jpg)
+}
+
+.social-media {
+    display: flex;
+    flex-basis: 1;
+}
