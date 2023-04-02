@@ -1,0 +1,68 @@
+@use 'variables' as v;
+
+.collections * {
+    // outline: 1px solid black;
+    font-family: v.$ff-primary;
+    text-transform: capitalize;
+}
+
+.collections-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    >div {
+        gap: 1.5rem;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+          h4 {
+            font-size: v.$fs-600;
+            font-weight: v.$fw-500;
+            text-shadow: 2px 2px 2px v.$white;
+          }
+    }
+}
+
+div.col-of-cac {
+    flex: 1 0 60%;
+    gap: 2rem;
+    padding-left: 3rem;
+    > * {
+        max-width: 45%;
+    }
+}
+
+div.new-col {
+    flex: 1 0 30%;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-col {
+    text-align: center;
+    font-size: v.$fs-400;
+    color: v.$white;
+    background: v.$green;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+}
+
+.col-of-cac-1 {
+    background: no-repeat center url(../../assets/b1.jpeg);
+}
+
+.col-of-cac-2 {
+    background: no-repeat center url(../../assets/b4.jpeg);
+}
+
+.new-col-1 {
+    background: no-repeat center url(../../assets/b2.jpeg);
+}
+
+.new-col-2 {
+    background: no-repeat center url(../../assets/b3.jpeg);
+}

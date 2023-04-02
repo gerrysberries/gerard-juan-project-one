@@ -1,0 +1,10 @@
+@use 'variables' as v;
+
+.blog {
+    font-family: v.$ff-primary;
+    text-align: center;
+}
+  .text-container {
+    margin: 0 auto 3rem;
+    width: 70%;
+  }

@@ -113,6 +113,10 @@ html {
   font-size: 16px;
 }
 
+.body {
+  font-family: "Rubik", sans-serif;
+}
+
 header {
   font-family: "Rubik", sans-serif;
   font-size: 1rem;
@@ -293,13 +297,26 @@ header {
   font-family: "Rubik", sans-serif;
 }
 
-.products-heading {
+.section-heading {
   font-size: 2.25rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+.section-heading::before, .section-heading::after {
+  background-color: hsl(85, 52%, 64%);
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  left: -1rem;
+  width: 5%;
+}
+.section-heading::after {
+  left: 1rem;
 }
 
 .product-categories-list {
@@ -371,4 +388,97 @@ button {
 .card span {
   color: hsl(85, 52%, 64%);
   font-size: 1rem;
+}
+
+.collections * {
+  font-family: "Rubik", sans-serif;
+  text-transform: capitalize;
+}
+
+.collections-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2rem;
+}
+.collections-wrapper > div {
+  gap: 1.5rem;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+}
+.collections-wrapper > div h4 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 2px hsl(0, 0%, 100%);
+}
+
+div.col-of-cac {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 60%;
+          flex: 1 0 60%;
+  gap: 2rem;
+  padding-left: 3rem;
+}
+div.col-of-cac > * {
+  max-width: 45%;
+}
+
+div.new-col {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.btn-col {
+  text-align: center;
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  background: hsl(85, 52%, 64%);
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+}
+
+.col-of-cac-1 {
+  background: no-repeat center url(../../assets/b1.jpeg);
+}
+
+.col-of-cac-2 {
+  background: no-repeat center url(../../assets/b4.jpeg);
+}
+
+.new-col-1 {
+  background: no-repeat center url(../../assets/b2.jpeg);
+}
+
+.new-col-2 {
+  background: no-repeat center url(../../assets/b3.jpeg);
+}
+
+.blog {
+  font-family: "Rubik", sans-serif;
+  text-align: center;
+}
+
+.text-container {
+  margin: 0 auto 3rem;
+  width: 70%;
 }

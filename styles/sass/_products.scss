@@ -9,13 +9,27 @@
     font-family: v.$ff-primary;
 }
 
-.products-heading {
+.section-heading {
     font-size: v.$fs-600;
     font-weight: v.$fw-700;
     text-transform: uppercase;
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    &::before,
+    &::after {
+        background-color: v.$green;
+        content: "";
+        display: inline-block;
+        height: 2px;
+        position: relative;
+        vertical-align: middle;
+        left: -1rem;
+        width: 5%;
+    }
+    &::after {
+        left: 1rem;
+    }
 }
 
 .product-categories-list {
@@ -27,6 +41,7 @@
         border: 1.5px solid v.$grey-light;
         border-radius: 0.25rem;
         padding: 0.3rem 1rem;
+
         &:hover,
         :focus {
             border: 1.5px dashed v.$green;
@@ -52,7 +67,7 @@
     gap: 8px;
 }
 
-.card > img {
+.card>img {
     width: 100%;
     align-self: center;
     margin-bottom: -2.75rem;
@@ -68,7 +83,7 @@ button {
 }
 
 .card p {
-text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .card span {
