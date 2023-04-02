@@ -1,10 +1,46 @@
 @use 'variables' as v;
 
 .blog {
-    font-family: v.$ff-primary;
-    text-align: center;
+  font-family: v.$ff-primary;
+  text-align: center;
 }
-  .text-container {
-    margin: 0 auto 3rem;
-    width: 70%;
+
+.text-container {
+  margin: 0 auto 3rem;
+  width: 70%;
+}
+
+.blog-post-container {
+  display: flex;
+  gap: 2rem;
+}
+
+article {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  gap: 1rem;
+  text-align: left;
+  line-height: 1.75rem;
+  background: v.$blue-faint;
+  border-radius: 0.5rem;
+  padding: 2rem 1.5rem;
+  span {
+    color: v.$green;
+    text-transform: uppercase;
+    display: inline-block;
   }
+  h5 {
+    color: v.$grey-dark;
+    font-size: v.$fs-500;
+    text-transform: capitalize;
+  }
+}
+
+
+.author-flex-container {
+  display: flex;
+  gap: 1rem;
+}

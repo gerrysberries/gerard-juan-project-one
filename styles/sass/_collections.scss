@@ -18,25 +18,28 @@
         flex-direction: column;
         justify-content: center;
         align-items: start;
-          h4 {
+
+        h4 {
+            color: v.$black;
             font-size: v.$fs-600;
             font-weight: v.$fw-500;
             text-shadow: 2px 2px 2px v.$white;
-          }
+        }
     }
 }
 
 div.col-of-cac {
-    flex: 1 0 60%;
+    flex: 1 0 64%;
     gap: 2rem;
     padding-left: 3rem;
-    > * {
-        max-width: 45%;
+
+    >* {
+        max-width: 50%;
     }
 }
 
 div.new-col {
-    flex: 1 0 30%;
+    flex: 1 0 32%;
     align-items: center;
     text-align: center;
 }
@@ -47,7 +50,7 @@ div.new-col {
     color: v.$white;
     background: v.$green;
     text-transform: uppercase;
-    padding: 0.75rem 1.5rem;
+    padding: 0.75rem 2.25rem;
     border-radius: 2rem;
 }
 
