@@ -286,16 +286,45 @@ header {
       -ms-flex: 1;
           flex: 1;
 }
-
 .payment-text-container {
-  -webkit-box-flex: 4;
-      -ms-flex: 4;
-          flex: 4;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
 }
 .payment-text-container h4 {
   font-size: 1.25rem;
 }
 
+@media (max-width: 940px) {
+  .payment-info-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 2rem;
+  }
+  .payment-text-container {
+    -webkit-box-flex: 2;
+        -ms-flex: 2;
+            flex: 2;
+  }
+  .card {
+    width: 50%;
+  }
+}
+@media (max-width: 720px) {
+  .card {
+    width: 75%;
+  }
+}
+@media (max-width: 480px) {
+  .card {
+    width: 100%;
+  }
+}
 .products {
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
@@ -450,6 +479,7 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 2rem;
+  font-weight: 500;
 }
 .collections-wrapper > div {
   gap: 1.5rem;
@@ -473,6 +503,11 @@ header {
   font-size: 2.25rem;
   font-weight: 500;
   text-shadow: 2px 2px 2px hsl(0, 0%, 100%);
+}
+
+.collections-wrapper > div > * {
+  position: relative;
+  z-index: 1;
 }
 
 div.col-of-cac {
@@ -507,21 +542,44 @@ div.new-col {
 }
 
 .col-of-cac-1 {
-  background: center/cover no-repeat url(../../assets/b1.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b1.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b1.jpeg);
 }
 
 .col-of-cac-2 {
-  background: center/cover no-repeat url(../../assets/b4.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b4.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b4.jpeg);
 }
 
 .new-col-1 {
-  background: center/cover no-repeat url(../../assets/b2.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b2.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b2.jpeg);
 }
 
 .new-col-2 {
-  background: center/cover no-repeat url(../../assets/b3.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b3.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b3.jpeg);
 }
 
+@media (max-width: 600px) {
+  .collections-wrapper > div h4 {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 480px) {
+  .btn-col {
+    padding: 0.5rem 1.5rem;
+  }
+  div.new-col {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+}
 .blog {
   font-family: "Rubik", sans-serif;
   text-align: center;
