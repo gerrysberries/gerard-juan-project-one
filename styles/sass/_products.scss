@@ -59,31 +59,43 @@
     margin: 3rem 0;
     gap: 1rem;
 
-    // justify-content: center;
     >a {
         flex-basis: calc((100% - 3rem) / 4);
+        transition: 0.1s linear;
+
+        &:hover {
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+            transition: 0.2s linear;
+        }
     }
 }
 
-.card {
+.product-card {
     display: flex;
     flex-direction: column;
     gap: 8px;
-}
-
-.card>img {
-    width: 100%;
-    align-self: center;
-    margin-bottom: -2.75rem;
+    >img {
+        width: 100%;
+        align-self: center;
+        margin-bottom: -2.75rem;
+    }
 }
 
 .btn-add {
-    z-index: 2;
+    // z-index to allow user to add to cart when hovering over image
+    z-index: 1;
     width: 2rem;
     background: v.$white;
     border: 1px solid white;
     box-shadow: 1px 3px 5px 1px v.$grey-light;
     margin-left: 0.5rem;
+    &:hover {
+        width: 2.5rem;
+        box-shadow: 1px 3px 5px 1px v.$green;
+        cursor: pointer;
+    }
 }
 
 .card p {

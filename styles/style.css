@@ -356,9 +356,17 @@ header {
 .product-cards-container > a {
   -ms-flex-preferred-size: calc((100% - 3rem) / 4);
       flex-basis: calc((100% - 3rem) / 4);
+  -webkit-transition: 0.1s linear;
+  transition: 0.1s linear;
+}
+.product-cards-container > a:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
-.card {
+.product-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -368,8 +376,7 @@ header {
           flex-direction: column;
   gap: 8px;
 }
-
-.card > img {
+.product-card > img {
   width: 100%;
   -ms-flex-item-align: center;
       align-self: center;
@@ -377,13 +384,19 @@ header {
 }
 
 .btn-add {
-  z-index: 2;
+  z-index: 1;
   width: 2rem;
   background: hsl(0, 0%, 100%);
   border: 1px solid white;
   -webkit-box-shadow: 1px 3px 5px 1px hsl(210, 14%, 89%);
           box-shadow: 1px 3px 5px 1px hsl(210, 14%, 89%);
   margin-left: 0.5rem;
+}
+.btn-add:hover {
+  width: 2.5rem;
+  -webkit-box-shadow: 1px 3px 5px 1px hsl(85, 52%, 64%);
+          box-shadow: 1px 3px 5px 1px hsl(85, 52%, 64%);
+  cursor: pointer;
 }
 
 .card p {
@@ -524,6 +537,8 @@ div.new-col {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   gap: 2rem;
 }
 
@@ -571,6 +586,33 @@ article h5 {
   gap: 1rem;
 }
 
+@media (max-width: 940px) {
+  article {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -ms-flex-preferred-size: 45%;
+        flex-basis: 45%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .feature-article {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+  .author-flex-container {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 footer * {
   outline: 1px solid black;
 }
