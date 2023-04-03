@@ -296,6 +296,10 @@ header {
   font-size: 1.25rem;
 }
 
+.products * {
+  outline: 1px solid black;
+}
+
 .products {
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
@@ -351,10 +355,11 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 3rem 0;
+  gap: 1rem;
 }
 .product-cards-container > a {
-  -ms-flex-preferred-size: 25%;
-      flex-basis: 25%;
+  -ms-flex-preferred-size: calc((100% - 3rem) / 4);
+      flex-basis: calc((100% - 3rem) / 4);
 }
 
 .card {
@@ -394,6 +399,36 @@ header {
   font-size: 1rem;
 }
 
+@media (max-width: 940px) {
+  .product-cards-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 1rem;
+  }
+  .product-cards-container > a {
+    -ms-flex-preferred-size: calc((100% - 2rem) / 3);
+        flex-basis: calc((100% - 2rem) / 3);
+  }
+}
+@media (max-width: 768px) {
+  .product-cards-container {
+    gap: 1rem;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .product-cards-container > a {
+    -ms-flex-preferred-size: calc((100% - 1rem) / 2);
+        flex-basis: calc((100% - 1rem) / 2);
+  }
+}
+@media (max-width: 480px) {
+  .product-cards-container > a {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+}
 .collections * {
   font-family: "Rubik", sans-serif;
   text-transform: capitalize;
