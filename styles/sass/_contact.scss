@@ -42,11 +42,12 @@
     padding: 2rem;
     color: white;
     background: center / cover no-repeat url(../../assets/contact.jpg);
+
     // background-size: cover;
     // background-position: center;
-      h2 {
+    h2 {
         font-weight: v.$fw-500;
-      }
+    }
 }
 
 .contact-form {
@@ -70,6 +71,7 @@ textarea {
 textarea {
     flex: 1;
     flex-basis: 100%;
+    max-width: 100%;
 }
 
 .btn-form {
@@ -82,4 +84,12 @@ textarea {
     border-radius: 1rem;
     flex-basis: 30%;
     border: 0;
+}
+
+// media queries
+
+@media (max-width: 960px) {
+    .form-wrapper {
+        flex-direction: column;
+    }
 }
