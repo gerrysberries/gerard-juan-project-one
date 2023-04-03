@@ -296,10 +296,6 @@ header {
   font-size: 1.25rem;
 }
 
-.products * {
-  outline: 1px solid black;
-}
-
 .products {
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
@@ -498,19 +494,19 @@ div.new-col {
 }
 
 .col-of-cac-1 {
-  background: no-repeat center url(../../assets/b1.jpeg);
+  background: center/cover no-repeat url(../../assets/b1.jpeg);
 }
 
 .col-of-cac-2 {
-  background: no-repeat center url(../../assets/b4.jpeg);
+  background: center/cover no-repeat url(../../assets/b4.jpeg);
 }
 
 .new-col-1 {
-  background: no-repeat center url(../../assets/b2.jpeg);
+  background: center/cover no-repeat url(../../assets/b2.jpeg);
 }
 
 .new-col-2 {
-  background: no-repeat center url(../../assets/b3.jpeg);
+  background: center/cover no-repeat url(../../assets/b3.jpeg);
 }
 
 .blog {
@@ -583,9 +579,7 @@ footer {
   font-family: "Rubik", sans-serif;
   padding-top: 4rem;
   padding-bottom: 3rem;
-  background: no-repeat url(../../assets/footer.jpg);
-  background-size: cover;
-  background-position: center;
+  background: center/cover no-repeat url(../../assets/footer.jpg);
 }
 
 .footer-wrapper {
@@ -694,9 +688,7 @@ footer {
   gap: 0.5rem;
   padding: 2rem;
   color: white;
-  background: no-repeat url(../../assets/contact.jpg);
-  background-size: cover;
-  background-position: center;
+  background: center/cover no-repeat url(../../assets/contact.jpg);
 }
 .form-container-left h2 {
   font-weight: 500;

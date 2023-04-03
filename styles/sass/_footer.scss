@@ -8,9 +8,7 @@ footer {
     font-family: v.$ff-primary;
     padding-top: 4rem;
     padding-bottom: 3rem;
-    background: no-repeat url(../../assets/footer.jpg);
-    background-size: cover;
-    background-position: center;
+    background: center / cover no-repeat url(../../assets/footer.jpg);
 }
 
 .footer-wrapper {

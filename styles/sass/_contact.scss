@@ -41,9 +41,9 @@
     gap: 0.5rem;
     padding: 2rem;
     color: white;
-    background: no-repeat url(../../assets/contact.jpg);
-    background-size: cover;
-    background-position: center;
+    background: center / cover no-repeat url(../../assets/contact.jpg);
+    // background-size: cover;
+    // background-position: center;
       h2 {
         font-weight: v.$fw-500;
       }
