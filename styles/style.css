@@ -644,6 +644,8 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0px 1px 6px 5px hsl(210, 14%, 89%);
+          box-shadow: 0px 1px 6px 5px hsl(210, 14%, 89%);
 }
 
 .form-container-left {
@@ -660,6 +662,9 @@ footer {
   background: no-repeat url(../../assets/contact.jpg);
   background-size: cover;
   background-position: center;
+}
+.form-container-left h2 {
+  font-weight: 500;
 }
 
 .contact-form {
@@ -704,4 +709,5 @@ textarea {
   border-radius: 1rem;
   -ms-flex-preferred-size: 30%;
       flex-basis: 30%;
+  border: 0;
 }
