@@ -58,6 +58,14 @@ div.new-col {
     text-transform: uppercase;
     padding: 0.75rem 2.25rem;
     border-radius: 2rem;
+
+    &:hover,
+    &:focus {
+        background: v.$grey-dark;
+        color: v.$green;
+        cursor: pointer;
+        border: 3px solid v.$green;
+    }
 }
 
 .col-of-cac-1 {

@@ -40,6 +40,14 @@
     text-transform: uppercase;
     padding: 1.25rem 2.25rem;
     border-radius: 2rem;
+
+    &:hover,
+    &:focus {
+        background: v.$grey-dark;
+        color: v.$green;
+        cursor: pointer;
+        border: 3px solid v.$green;
+    }
 }
 
 // media queries
@@ -65,9 +73,10 @@
 
     .feature-text-container {
         text-align: center;
-            p {
-                line-height: 2.5rem;
-            }
+
+        p {
+            line-height: 2.5rem;
+        }
     }
 
     .feature h1 {
