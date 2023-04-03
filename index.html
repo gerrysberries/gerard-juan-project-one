@@ -24,12 +24,12 @@
 
     <header class="header-main">
         <div class="wrapper header-main-wrapper">
-            <a class="logo" href=""><img src="./assets/logo.png" alt=""></a>
+            <a class="logo" href="./index.html"><img src="./assets/logo.png" alt=""></a>
             <nav class="nav-top">
                 <ul>
-                    <li><a href="./index.html"></a>Home</li>
-                    <li><a href="./blog.html"></a>Blog</li>
-                    <li><a href="./contact.html"></a>Contact us</li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
                 </ul>
             </nav>
             <a class="cart" href="">
@@ -50,7 +50,7 @@
                 <div class="feature-text-container">
                     <h1>65% off <span>new plant</span></h1>
                     <p>Pronia, with 100% natural, organic & plant shop.</p>
-                    <a class="btn btn-feature" href="#">Discover now</a>
+                    <a class="btn btn-feature" href="#products">Discover now</a>
                 </div>
                 <div class="feature-image-container">
                     <img src="./assets/header.png" alt="photo of new pant on sale">
@@ -60,7 +60,7 @@
 
         <!-- PAYMENT INFO SECTION -->
 
-        <section class="payment-info">
+        <section id="payment-info" class="payment-info">
             <div class="wrapper payment-info-wrapper">
                 <div class="card">
                     <div class="payment-image-container">
@@ -94,7 +94,7 @@
 
         <!-- PRODUCTS SECTION -->
 
-        <section class="products">
+        <section id="products" class="products">
             <div class="wrapper products-wrapper">
                 <h3 class="section-heading products-heading">Our products</h3>
                 <ul class="product-categories-list">
@@ -195,12 +195,12 @@
                 <div class="col-of-cac col-of-cac-1">
                     <span>collection of cactus</span>
                     <h4>pottery pots & plant</h4>
-                    <a class="btn btn-col" href="">shop now</a>
+                    <a class="btn btn-col" href="#products">shop now</a>
                 </div>
                 <div class="new-col new-col-1">
                     <span>new collection</span>
                     <h4>plant port</h4>
-                    <a class="btn btn-col" href="">shop now</a>
+                    <a class="btn btn-col" href="#products">shop now</a>
                     <!-- empty <div> elements for flex-distribution -->
                     <div class="hidden"></div>
                     <div class="hidden"></div>
@@ -208,7 +208,7 @@
                 <div class="new-col new-col-2">
                     <span>new collection</span>
                     <h4>plant port</h4>
-                    <a class="btn btn-col" href="">shop now</a>
+                    <a class="btn btn-col" href="#products">shop now</a>
                     <!-- empty <div> elements for flex-distribution -->
                     <div class="hidden"></div>
                     <div class="hidden"></div>
@@ -216,14 +216,14 @@
                 <div class="col-of-cac col-of-cac-2">
                     <span>collection of cactus</span>
                     <h4>hanging pots & plant</h4>
-                    <a class="btn btn-col" href="">shop now</a>
+                    <a class="btn btn-col" href="#products">shop now</a>
                 </div>
             </div>
         </section>
 
         <!-- BLOG SECTION -->
 
-        <section class="blog">
+        <section id="blog" class="blog">
             <div class="wrapper blog-wrapper">
                 <div class="text-container">
                     <h3 class="section-heading blog-heading">Latest posts</h3>
@@ -231,7 +231,7 @@
                         about botany, but who recently learned how to water plants correctly.</p>
                 </div>
                 <div class="blog-post-container">
-                    <article class="feature-article">
+                    <article>
                         <div class="author-flex-container">
                             <span>by: gerard j</span>
                             <span>3 april 2023</span>
@@ -288,8 +288,8 @@
                         <li><a href="#">About pronia</a></li>
                         <li><a href="#">How to shop</a></li>
                         <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Contact us</a></li>
-                        <li><a href="#"></a>Log in</li>
+                        <li><a href="./contact.html">Contact us</a></li>
+                        <li><a href="#">Log in</a></li>
                     </ul>
                 </nav>
                 <nav class="footer-nav-container footer-nav-links">
@@ -299,17 +299,17 @@
                         <li><a href="#">View cart</a></li>
                         <li><a href="#">My wishlist</a></li>
                         <li><a href="#">Track my order</a></li>
-                        <li><a href="#"></a>Help</li>
+                        <li><a href="#">Help</a></li>
                     </ul>
                 </nav>
                 <nav class="footer-nav-container footer-nav-links">
                     <ul class="col">
                         <h5 class="footer-heading">Our Service</h5>
-                        <li><a href="#">Payment methods</a></li>
-                        <li><a href="#">Money guarantee</a></li>
-                        <li><a href="#">Returns</a></li>
-                        <li><a href="#">Shipping</a></li>
-                        <li><a href="#"></a>Privacy policy</li>
+                        <li><a href="#payment-info">Payment methods</a></li>
+                        <li><a href="#payment-info">Money guarantee</a></li>
+                        <li><a href="#payment-info">Returns</a></li>
+                        <li><a href="#payment-info">Shipping</a></li>
+                        <li><a href="#payment-info">Privacy policy</a></li>
                     </ul>
                 </nav>
                 <div class="footer-nav-container">

@@ -209,6 +209,60 @@ header {
   line-height: 1.3rem;
 }
 
+@media (max-width: 768px) {
+  .wrapper.header-super-wrapper {
+    width: 100%;
+    padding: 0 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .wrapper.header-super-wrapper .heading-sale {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin: 0;
+    padding: 1rem;
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+  .wrapper.header-super-wrapper a {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+}
+@media (max-width: 650px) {
+  .header-super {
+    position: relative;
+  }
+  .header-main-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .header-main-wrapper .logo {
+    position: absolute;
+    top: 1rem;
+  }
+  .header-main ul {
+    font-size: 1.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .cart {
+    display: none;
+  }
+}
 .feature {
   background: hsl(28, 58%, 94%);
   font-family: "Rubik", sans-serif;
@@ -224,9 +278,10 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.feature .feature-wrapper * {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
+.feature .feature-wrapper > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .feature h1 {
@@ -249,6 +304,37 @@ header {
   border-radius: 2rem;
 }
 
+@media (max-width: 940px) {
+  .feature h1 span {
+    font-size: 2.25rem;
+    font-weight: 500;
+  }
+  .feature p {
+    line-height: 1.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .feature-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .feature-text-container {
+    text-align: center;
+  }
+  .feature-text-container p {
+    line-height: 2.5rem;
+  }
+  .feature h1 {
+    font-size: 3.375rem;
+    font-weight: 500;
+  }
+  .feature h1 span {
+    font-size: 5.0625rem;
+  }
+}
 .payment-info {
   font-family: "Rubik", sans-serif;
   text-transform: capitalize;
@@ -466,6 +552,14 @@ header {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
+  .section-heading {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .product-categories-list {
+    border: none;
+    outline: none;
+  }
 }
 .collections * {
   font-family: "Rubik", sans-serif;
@@ -561,12 +655,20 @@ div.new-col {
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b3.jpeg);
 }
 
+@media (max-width: 768px) {
+  .collections-wrapper {
+    width: 100%;
+  }
+}
 @media (max-width: 600px) {
   .collections-wrapper > div h4 {
     font-size: 1.5rem;
   }
 }
 @media (max-width: 480px) {
+  .collections-wrapper {
+    gap: 0;
+  }
   .btn-col {
     padding: 0.5rem 1.5rem;
   }
@@ -624,6 +726,9 @@ article {
   border-radius: 0.5rem;
   padding: 2rem 1.5rem;
 }
+article img {
+  width: 100%;
+}
 article span {
   color: hsl(85, 52%, 64%);
   text-transform: uppercase;
@@ -646,9 +751,6 @@ article h5 {
 
 @media (max-width: 940px) {
   article {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
     -ms-flex-preferred-size: 45%;
         flex-basis: 45%;
     -webkit-box-align: center;
@@ -669,6 +771,22 @@ article h5 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+@media (max-width: 768px) {
+  article {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .blog-wrapper {
+    width: 100%;
   }
 }
 footer * {

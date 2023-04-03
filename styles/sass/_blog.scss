@@ -30,6 +30,10 @@ article {
   border-radius: 0.5rem;
   padding: 2rem 1.5rem;
 
+  img {
+    width: 100%;
+  }
+
   span {
     color: v.$green;
     text-transform: uppercase;
@@ -53,7 +57,6 @@ article {
 
 @media (max-width: 940px) {
   article {
-    order: 2;
     flex-basis: 45%;
     align-items: center;
     text-align: center;
@@ -67,5 +70,18 @@ article {
   .author-flex-container {
     width: 100%;
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  article {
+    flex-basis: 100%;
+    align-items: center;
+    text-align: center;
+    width: min-content;
+  }
+
+  .blog-wrapper {
+    width: 100%;
   }
 }
