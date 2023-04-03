@@ -375,7 +375,7 @@ header {
   margin-bottom: -2.75rem;
 }
 
-button {
+.btn-add {
   z-index: 2;
   width: 2rem;
   background: hsl(0, 0%, 100%);
@@ -606,4 +606,102 @@ footer {
 
 .phone-num {
   font-size: 1.5rem;
+}
+
+.banner {
+  font-family: "Rubik", sans-serif;
+  background: no-repeat url(../../assets/contact-header.jpg);
+  background-size: cover;
+  background-position: center/80%;
+  height: 40vh;
+}
+
+.banner-wrapper {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner-heading {
+  font-size: 2.25rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form {
+  font-family: "Rubik", sans-serif;
+  margin: 3rem 0;
+}
+
+.form-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form-container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  padding: 2rem;
+  color: white;
+  background: no-repeat url(../../assets/contact.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.contact-form {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+input,
+textarea {
+  font-style: italic;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid hsl(210, 14%, 89%);
+  color: hsl(0, 0%, 30%);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+
+textarea {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.btn-form {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+  background: hsl(85, 52%, 64%);
+  text-transform: uppercase;
+  padding: 1.25rem 2.25rem;
+  margin-left: auto;
+  border-radius: 1rem;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
