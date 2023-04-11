@@ -192,14 +192,14 @@ header {
 }
 
 .cart-items {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background: hsl(85, 52%, 64%);
   margin: 0 auto;
   position: absolute;
   top: -0.25rem;
-  right: -0.25rem;
+  right: -0.4rem;
   text-align: center;
 }
 .cart-items span {
@@ -648,23 +648,23 @@ div.new-col {
 }
 
 .col-of-cac-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b1.jpeg);
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b1.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../assets/b1.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../assets/b1.jpeg);
 }
 
 .col-of-cac-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b4.jpeg);
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b4.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../assets/b4.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../assets/b4.jpeg);
 }
 
 .new-col-1 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b2.jpeg);
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b2.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../assets/b2.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../assets/b2.jpeg);
 }
 
 .new-col-2 {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../../assets/b3.jpeg);
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../../assets/b3.jpeg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.3)), to(rgba(255, 255, 255, 0.3))), center/cover no-repeat url(../assets/b3.jpeg);
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), center/cover no-repeat url(../assets/b3.jpeg);
 }
 
 @media (max-width: 768px) {

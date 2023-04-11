@@ -1,4 +1,4 @@
-@use 'variables' as v;
+@use "variables" as v;
 
 // superheader styles
 
@@ -71,14 +71,14 @@ header {
 }
 
 .cart-items {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background: v.$green;
   margin: 0 auto;
   position: absolute;
   top: -0.25rem;
-  right: -0.25rem;
+  right: -0.4rem;
   text-align: center;
 
   span {
@@ -114,17 +114,17 @@ header {
 }
 
 @media (max-width: 650px) {
-.header-super {
-  position: relative;
-}
+  .header-super {
+    position: relative;
+  }
 
   .header-main-wrapper {
     flex-direction: column;
     gap: 1rem;
-      .logo {
-        position: absolute;
-        top: 1rem;
-      }
+    .logo {
+      position: absolute;
+      top: 1rem;
+    }
   }
 
   .header-main ul {
